@@ -18,7 +18,7 @@ document.querySelectorAll("conteudo").forEach(card => {
 //fecha o modal
 let classCard = document.querySelector(".preview")
 
-let close = document.querySelector(".btn-close").onclick = () => {
+let close = document.querySelector(".return").onclick = () => {
     classCard.classList.remove("active")
     card.style.display = "none"
 }
