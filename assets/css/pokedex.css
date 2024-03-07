@@ -234,9 +234,10 @@
     position: absolute;
     right: 1.3rem;
     font-size: 1rem;
-    cursor: pointer;
     color: #fff;
     font-weight: 400;
+    border: none;
+    background-color: #ffffff00;
 }
 
 .card-pokemon .preview .name {

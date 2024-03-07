@@ -1,6 +1,8 @@
 const pokemonList = document.querySelector("#pokemonList")
 const loadMoreButton = document.querySelector("#loadMoreButton")
 const cardPokemonPreview = document.querySelector("#card-pokemon")
+let card = document.querySelector(".card-pokemon")
+
 
 const maxRecords = 151
 const limit = 20;
@@ -51,23 +53,24 @@ loadMoreButton.addEventListener("click", () => {
 // ____________________________________________________________________________
 
 
-// function montaCards(pokemon) {
 
-//     return console.log(pokemon);
-// }
-
+window.closeCard = () => {
+    let classCard = document.querySelector(".preview")
+    classCard.classList.remove("active")
+    card.style.display = "none"
+};
 
 
 function cardPokemon(numberPokemon) {
     card.style.display = "flex"
     const infoCards = `
-    <section class="preview active" data-target="p-1">
+        <section class="preview active" data-target="p-1">
             <header class="header">
                 <nav class="header-card">
-                    <span class="return">X</span>
-                    <span class="number">${numberPokemon}</span>
-                </nav>
-                <h3 class="name">Tati</h3>
+                <button onclick="closeCard()" class="return">X</button>
+                <span class="number">${numberPokemon}</span>
+            </nav>
+            <h3 class="name">Tati</h3>
                 <ol class="types">
                     <li class="type">grass</li>
                     <li class="type">poison</li>
@@ -117,3 +120,4 @@ function cardPokemon(numberPokemon) {
     cardPokemonPreview.innerHTML = infoCards
 
 }
+
