@@ -152,7 +152,6 @@
 }
 
 .card-pokemon .preview {
-    background-color: #77c850;
     position: relative;
     border-radius: 1rem;
     width: 16.3rem;
@@ -193,6 +192,16 @@
 
 .body-card .main-card span {
     padding: .25rem;
+    text-transform: capitalize;
+}
+
+.group-abilities {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: .25rem;
+    text-transform: capitalize;
+
 }
 
 .card-pokemon .preview .nav-bar .nav {
@@ -310,6 +319,8 @@
     border-radius: 1rem;
 }
 
+
+
 @media screen and (min-width: 380px) {
     .pokemons {
         grid-template-columns: 1fr 1fr;
@@ -327,25 +338,3 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* usar para fazer barras Base Stats */
-
-/* border-left-width: 1rem; */
