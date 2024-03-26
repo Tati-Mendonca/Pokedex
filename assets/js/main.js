@@ -5,7 +5,6 @@ const maxRecords = 151
 let limit = 20;
 let offset = 0;
 
-
 function printAllCards(pokemon) {
     return `
     <li class="pokemon ${pokemon.type}" id="detail" onclick="clickCard(${pokemon.number})" data-pokemon="p-1"}> 
@@ -23,18 +22,14 @@ function printAllCards(pokemon) {
 </li>`
 }
 
-
 function paginationOfCards(offset, limit) {
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
-        //console.log(pokemons); //array com os 20 pokemons na tela
         const newHtml = pokemons.map(printAllCards).join("")
-        pokemonList.innerHTML += newHtml //imprime os cards no HTML
+        pokemonList.innerHTML += newHtml
     })
-
 }
 
 paginationOfCards(offset, limit)
-//trazerSpecies(id = 0)
 
 loadMoreButton.addEventListener("click", () => {
     offset += limit
