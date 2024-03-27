@@ -153,8 +153,7 @@
 .card-pokemon .preview {
     position: relative;
     border-radius: 1rem;
-    width: 16.3rem;
-    padding-top: 1.3rem;
+    width: 18em;
 }
 
 .card-pokemon .preview .active {
@@ -171,17 +170,16 @@
 }
 
 .card-pokemon .preview .img-card {
-    width: 8rem;
+    width: 8em;
     margin-top: 1.3rem;
     align-items: center;
 }
 
 .body-card {
     margin-top: -2rem;
-    padding: 2rem 1rem 0 1rem;
+    padding: 1.3rem 1rem 0 1rem;
     background-color: #fff;
     font-size: .625rem;
-    /* height: 16rem; */
 }
 
 .body-card .main-card {
@@ -240,11 +238,13 @@
 
 .card-pokemon .preview .return {
     position: absolute;
-    right: 1.3rem;
+    font-family: arial;
+    right: 0.1rem;
     font-size: 1rem;
     color: #fff;
     font-weight: 400;
     border: none;
+    padding: 0.10rem 1rem 1rem 1rem;
     background-color: #ffffff00;
 }
 
@@ -275,14 +275,12 @@
 }
 
 .card-pokemon .body-card {
-    /* margin: 2rem; */
     border-radius: 1rem;
 }
 
 .card-pokemon .info-card1 {
     display: flex;
     flex-direction: column;
-    padding-bottom: 2rem;
     color: #00000062;
 }
 
@@ -292,11 +290,15 @@
     padding: 0.25rem;
 }
 
+.card-pokemon .info-card2 .stronger {
+    padding: 0.25rem;
+}
+
 .card-pokemon .info-card2 {
     display: flex;
     flex-direction: column;
     margin-left: 1em;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     color: #000000be;
 }
 

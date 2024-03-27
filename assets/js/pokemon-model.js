@@ -1,7 +1,5 @@
 class Pokemon {
     name;
     number;
-
-
 }
 
