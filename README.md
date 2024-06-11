@@ -1,7 +1,7 @@
 
 # Sobre o projeto
 
-A pokedex foi um projeto desenvolvido durante o curso da Alura, para colocar em prática conhecimentos básicos sobre consumo de API.
+A pokedex foi um projeto desenvolvido durante o curso da DIO, para colocar em prática conhecimentos básicos sobre consumo de API.
 
 ## Objetivo
 
